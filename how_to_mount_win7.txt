@@ -1,0 +1,26 @@
+The very first time
+
+Step 1
+
+docker-machine stop (if running)
+open virtualbox/setting/Shared Folder/press Plus to add new shared folder
+From Folder Path select the real folder on local computer
+Give it a name, e.g. "learn_spark"
+At Mount point write a folder in Linux system, e.g. /home/docker/projects
+Click OK to add the shared folder
+
+Step 2
+
+docker-machine start
+ssh into the virtual machine: docker-machine ssh
+check where are you standing: pwd (it should be /home/docker/)
+Create a folder: mkdir projects
+get out of the virtual machine by typing "exit"
+
+
+Step 3:
+Run this command:
+docker run -it -v /home/docker/projects:/home/jovyan/work -p 8888:8888 jupyter/pyspark-notebook
+
+
+From the second time onwards

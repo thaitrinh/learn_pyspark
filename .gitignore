@@ -1,0 +1,6 @@
+*.csv
+.idea
+.ipynb_checkpoints
+.local
+*~
+MyCode_Part1.zip
