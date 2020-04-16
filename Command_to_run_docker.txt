@@ -1,1 +1,3 @@
 docker run -it -v c://Users//thtrinh//my_code//learn_pyspark:/home/jovyan/work -p 8888:8888 jupyter/pyspark-notebook
+
+Running in Windows 7 is not fun!
